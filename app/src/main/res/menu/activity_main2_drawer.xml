@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_WIFI"
+            android:icon="@drawable/ic_wifi_black_24dp"
+            android:title="WIFI QR코드" />
+        <item
+            android:id="@+id/nav_CONTACT"
+            android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:title="연락처 QR코드" />
+        <item
+            android:id="@+id/nav_URL"
+            android:icon="@drawable/ic_language_black_24dp"
+            android:title="URL QR코드" />
+        <item
+            android:id="@+id/nav_PHONE"
+            android:icon="@drawable/ic_phone_forwarded_black_24dp"
+            android:title="전화걸기 QR코드" />
+    </group>
+
+    <item android:title="QR코드 스캔">
+        <menu>
+            <item
+                android:id="@+id/nav_scan"
+                android:icon="@drawable/ic_camera_alt_black_24dp"
+                android:title="QR코드 스캔" />
+        </menu>
+    </item>
+    <item android:title="문의하기">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="플레이스토어" />
+        </menu>
+    </item>
+
+    <item android:title="앱 정보">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_live_help_black_24dp"
+                android:title="앱 정보" />
+        </menu>
+    </item>
+
+</menu>

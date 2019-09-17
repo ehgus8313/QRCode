@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/id"
+    tools:context=".WIFIFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_gravity="start"
+        android:text="Dial a Phone Number" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="전화번호" />
+
+        <EditText
+            android:id="@+id/phoneText"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:inputType="phone"
+            android:hint="전화번호" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button"
+        android:background="@drawable/border"
+        android:layout_marginTop="30dp"
+        android:text="GO!"/>
+
+
+    <EditText
+        android:id="@+id/edt_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Enter Text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/QR_Image"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="@drawable/photo_frame"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fabsave"
+            android:layout_gravity="bottom|end"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            android:backgroundTint="#ffffff"
+            android:src="@drawable/ic_share_black_24dp"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:layout_anchor="@+id/id"
+            app:layout_anchorGravity="center_vertical|center_horizontal"
+            android:scaleType="centerInside"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab"
+            android:layout_gravity="bottom|end"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            android:backgroundTint="#ffffff"
+            android:src="@drawable/ic_arrow_downward_black_24dp"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:layout_anchor="@+id/id"
+            app:layout_anchorGravity="center_vertical|center_horizontal"
+            android:scaleType="centerInside"
+            app:fabSize="normal" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            android:backgroundTint="#009688"
+            android:src="@drawable/ic_archive_black_24dp"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp"
+            android:scaleType="centerInside"
+            app:layout_anchor="@+id/id"
+            app:layout_anchorGravity="center_vertical|center_horizontal"
+            app:fabSize="normal"/>
+
+    </LinearLayout>
+</ScrollView>

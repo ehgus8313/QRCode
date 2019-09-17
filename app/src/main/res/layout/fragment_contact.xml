@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/id"
+    tools:context=".ContactFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="meCard Contact Data" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="이름" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:hint="이름" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="별명" />
+
+        <EditText
+            android:id="@+id/nicknameText"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:hint="별명" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="전화 번호" />
+
+        <EditText
+            android:id="@+id/phoneText"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:hint="전화 번호" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/EmailText"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:hint="Email" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Organisation" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="소속" />
+
+        <EditText
+            android:id="@+id/CompanyText"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:hint="소속" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="홈페이지" />
+
+        <EditText
+            android:id="@+id/pageText"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:hint="홈페이지" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Personal Information"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="주소" />
+
+            <EditText
+                android:id="@+id/addressText"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:hint="주소" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="생일" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:id="@+id/yearSpinner"></Spinner>
+
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="년" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:id="@+id/monthSpinner"></Spinner>
+
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="월" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:id="@+id/daySpinner"></Spinner>
+
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="일" />
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button"
+        android:background="@drawable/border"
+        android:layout_marginTop="30dp"
+        android:text="GO!"/>
+
+
+    <EditText
+        android:id="@+id/edt_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Enter Text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/QR_Image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/photo_frame"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabsave"
+        android:layout_gravity="bottom|end"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="#ffffff"
+        android:src="@drawable/ic_share_black_24dp"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:layout_anchor="@+id/id"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        android:scaleType="centerInside"
+        app:fabSize="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab"
+        android:layout_gravity="bottom|end"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="#ffffff"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:layout_anchor="@+id/id"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        android:scaleType="centerInside"
+        app:fabSize="normal" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="#009688"
+        android:src="@drawable/ic_archive_black_24dp"
+        app:borderWidth="0dp"
+        app:pressedTranslationZ="12dp"
+        android:scaleType="centerInside"
+        app:layout_anchor="@+id/id"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        app:fabSize="normal"/>
+
+    </LinearLayout>
+</ScrollView>
